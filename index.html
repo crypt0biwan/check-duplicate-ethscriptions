@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="ERC-20 mint" />
+        <title>Check duplicate ethscriptions</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <script src="js/ethers-5.6.umd.min.js"></script>
+        <script src="js/crypto-js.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid bg-light text-dark py-5" data-bs-theme="light">
+            <div class="container">
+                <h2>Check duplicate ethscriptions</h2>
+                
+                <p>
+                    Welcome to the Duplicate Ethscriptions checker. Use at your own risk, I'm not responsible for anything. ✌️
+                </p>
+            </div>
+        </div>
+        
+        <div class="container-fluid py-5">
+            <div class="container">
+                <h4>Ethscription ID</h4>
+
+                <form class="row g-3 mt-2" validate>
+                    <div class="col-12 col-md-9">
+                        <label for="ethsid" class="visually-hidden">Ethscription ID</label>
+                        <input type="text" class="form-control" id="ethsid" required placeholder="0x1ef0ea734de727bbbd2a195a0fdbd3a2dedc4fa37195467f8e21b18daeee3766">
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <div class="d-grid">
+                            <button id="btn-check" class="btn btn-primary" type="submit">Check</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="container mt-4">
+                <h4>Result</h4>
+
+                <div id="result"></div>
+            </div>
+        </div>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>
