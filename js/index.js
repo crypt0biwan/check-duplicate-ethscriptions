@@ -25,8 +25,7 @@ async function get_ethscription(ethscription_id) {
     return provider.getTransaction(ethscription_id)
 }
 
-
-document.querySelector('#btn-check').addEventListener('click', async e => {
+const handle_click = async e => {
     e.preventDefault()
 
     let value = document.querySelector('#ethsid').value
@@ -54,4 +53,7 @@ document.querySelector('#btn-check').addEventListener('click', async e => {
     } else {
         result.innerHTML = `Please fill in an ethscription id`
     }
-})
+}
+
+document.querySelector('#btn-check').addEventListener('touchend', handle_click)
+document.querySelector('#btn-check').addEventListener('click', handle_click)
