@@ -55,5 +55,5 @@ const handle_click = async e => {
     }
 }
 
-document.querySelector('#btn-check').addEventListener('touchend', handle_click)
+document.querySelector('#btn-check').addEventListener('touchstart', handle_click)
 document.querySelector('#btn-check').addEventListener('click', handle_click)
